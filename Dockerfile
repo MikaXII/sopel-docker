@@ -26,7 +26,7 @@ ENV ENABLE_MODULES some_modules
 
 RUN mkdir -p /home/sopel/.sopel/modules
 ADD modules/* /home/sopel/.sopel/modules/
-ADD default.cfg /home/sopel/.sopel/default.cfg.tpl
+ADD default.cfg.tpl /home/sopel/.sopel/default.cfg.tpl
 ADD start.sh /usr/bin
 RUN chown sopel:sopel /home/sopel -R
 
